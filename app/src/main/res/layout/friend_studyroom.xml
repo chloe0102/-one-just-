@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/friend_studyroom">
+
+    <!-- 置頂頁面標題 -->
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="好友自習室"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true" />
+
+    <!--自習室ID顯示-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/studyroomIdCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pageTitle"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/white"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/studyroomIdContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="7dp" >
+
+            <TextView
+                android:id="@+id/studyroomId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="自習室ID："
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 計時器 -->
+    <LinearLayout
+        android:id="@+id/timerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@color/background"
+        android:layout_below="@id/studyroomIdCard">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="您已專注"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textSize="56dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/time" />
+    </LinearLayout>
+
+    <!-- 用戶頭像區域 -->
+    <LinearLayout
+        android:id="@+id/userContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/timerLayout"
+        android:padding="16dp" />
+
+    <!-- 離開自習室按鈕 -->
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="專注完成"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

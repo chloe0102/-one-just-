@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/baseline_keyboard_arrow_left_24"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="白噪音"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="細雨"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/drizzleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="雨天"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/rainButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="海浪"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/wavesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="流水"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/runningwaterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="篝火"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/bonfireButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="蟲鳴"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/insectchirpingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="鳥叫"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/birdchirpingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="蛙鳴"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/frogcroakingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="雜訊"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/NoiseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="溪河"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/streamButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="森林"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/forestButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:text="庭院"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/courtyardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="310dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_play_arrow" />
+        </LinearLayout>
+
+        <!-- 間隔橫線 -->
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="#D3D3D3" />
+
+    </LinearLayout>
+
+
+        <!-- 底部播放控制區域 -->
+        <LinearLayout
+            android:id="@+id/footerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EBEAE0"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/nowPlayingText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="細雨 — 白噪音"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/previousButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_skip_previous_24" />
+
+                <ImageButton
+                    android:id="@+id/playButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_play_arrow_gray" />
+
+                <ImageButton
+                    android:id="@+id/nextButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_skip_next_24" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

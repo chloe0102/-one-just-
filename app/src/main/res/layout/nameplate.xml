@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- 返回按鈕和標題 -->
+    <RelativeLayout
+        android:id="@+id/linerLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#F1F0E9"
+        android:padding="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 返回箭頭按鈕 -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_keyboard_arrow_left_24"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back" />
+
+        <!-- 標題文字 -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:text="身分銘牌"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- 當前銘牌 -->
+    <ImageButton
+        android:id="@+id/nameplateButton"
+        android:layout_width="263dp"
+        android:layout_height="114dp"
+        android:src="@drawable/identification_cycu"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/linerLayout1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/currentNameplateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="現在配戴的身分銘牌為"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/nameplateButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/schoolButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="中原大學"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#78A2A9"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/currentNameplateText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- 學校銘牌 -->
+    <TextView
+        android:id="@+id/schoolNameplateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="學校銘牌"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/schoolButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/school_nameplate"
+        android:layout_width="263dp"
+        android:layout_height="114dp"
+        android:src="@drawable/identification_cycu"
+        app:layout_constraintTop_toBottomOf="@id/schoolNameplateLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- 自定義銘牌 -->
+    <TextView
+        android:id="@+id/customNameplateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定義銘牌"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/school_nameplate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/identification_nameplate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/identification"
+        app:layout_constraintTop_toBottomOf="@id/customNameplateLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- 自定義文字顯示 -->
+    <TextView
+        android:id="@+id/nameplateTextView"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="自定義文字"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/identification_nameplate"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@id/identification_nameplate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/identification_nameplate"
+        app:layout_constraintTop_toTopOf="@id/identification_nameplate"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <!-- 自定義文字輸入框 -->
+    <EditText
+        android:id="@+id/nameplateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="輸入自定義文字"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/identification_nameplate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

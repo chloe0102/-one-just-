@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+
+        <provider
+            android:name=".WeatherContentProvider"
+            android:authorities="com.example.finalproject.provider.weather"
+            android:exported="true"
+            android:enabled="true"/>
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+
+        <activity android:name=".RegisterAccountActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".FocusDiaryActivity" />
+        <activity android:name=".ActivityChatroom" />
+        <activity android:name=".FocusLevelActivity" />
+        <activity android:name=".FriendListActivity" />
+        <activity android:name=".IdentityBadgeActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".MembershipUpgradeActivity" />
+        <activity android:name=".ProfileDetailsActivity" />
+        <activity android:name=".QuoteDictionaryActivity" />
+        <activity android:name=".WhiteNoiseActivity" />
+        <activity android:name=".FocusLevelExplanationActivity" />
+        <activity android:name=".ChatPreviewActivity" />
+        <activity android:name=".LogoutActivity" />
+        <activity android:name=".MyProfileActivity" />
+        <activity android:name=".BasicStudyroom"/>
+        <activity android:name=".DressUpActivity"/>
+        <activity android:name=".FriendStudyroom"/>
+        <activity android:name=".FriendStudyroomCheck"/>
+        <activity android:name=".LevelStudyroom"/>
+        <activity android:name=".SchoolStudyroom"/>
+        <activity android:name=".VideoStudyroom"/>
+        <activity android:name=".LoginChooseActivity"/>
+
+
+
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

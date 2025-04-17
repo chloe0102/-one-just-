@@ -1,0 +1,211 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:ignore="MissingConstraints">
+
+    <!-- 返回按鈕和標題 -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#F1F0E9"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_keyboard_arrow_left_24"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="專注等級說明"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <!-- 滾動區域 -->
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- 升等部分 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="關於升等"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/baseline_report_gmailerrorred_24" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="一個月為一個週期，每達到規定的專注時數即會升到下一等，最低專注等級為青銅，最高專注等級為菁英。"
+                android:textSize="18sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="青銅升至黃金每等級需專注30個小時才可升等，而黃金以上每等級皆須專注60個小時即升等，列表如下："
+                android:textSize="18sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/black" />
+
+            <!-- 表格 -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <TextView
+                        android:text="等級"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:text="單月累積專注時數"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:text="距離升等還需時數"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+                </TableRow>
+
+                <!-- 各等級數據 -->
+                <TableRow>
+                    <TextView android:text="青銅" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp" />
+                    <TextView android:text="0" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="30" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="白銀" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp" />
+                    <TextView android:text="30" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="60" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="黃金" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="60" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="60" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="鉑金" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="120" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="60" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="鑽石" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="180" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="60" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="星耀" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="240" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="60" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="菁英" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="300" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                    <TextView android:text="60" android:textSize="14sp" android:gravity="center" android:layout_marginBottom="10dp"/>
+                </TableRow>
+            </TableLayout>
+
+            <!-- 降等部分 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="關於降等"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/baseline_report_gmailerrorred_24" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="每個月會降一等級，但菁英及星耀最多降至鑽石，鑽石及鉑金最多降至黃金，而黃金以下等級不降等。"
+                android:textSize="18sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="一個禮拜未進行專注打卡即自動降一等級，不受黃金以下不降階之限制，一個月未進行打卡即降至青銅。"
+                android:textSize="18sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

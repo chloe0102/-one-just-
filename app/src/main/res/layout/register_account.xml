@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RegisterAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="暱稱*" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:drawableRight="@drawable/baseline_report_gmailerrorred_24"
+            android:hint="Insert your nickname"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColorHint="@color/gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="Email*" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:drawableRight="@drawable/baseline_report_gmailerrorred_24"
+            android:hint="Insert your email"
+            android:padding="8dp"
+            android:textColorHint="@color/gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="密碼*" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:drawableRight="@drawable/baseline_report_gmailerrorred_24"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="@color/gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="確認密碼*" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:drawableRight="@drawable/baseline_report_gmailerrorred_24"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="@color/gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/passwordError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="密碼不匹配"
+            android:textColor="#FF0000"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="性別*" />
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:padding="8dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="身分*" />
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:padding="8dp" />
+
+        <!-- User Agreement CheckBox -->
+        <CheckBox
+            android:id="@+id/checkboxAgreement"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="已閱讀並同意《用戶條款》"
+            android:layout_marginTop="6dp"/>
+
+        <Button
+            android:id="@+id/emailSignInButton"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/blue"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+            android:text="註冊帳號 "
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

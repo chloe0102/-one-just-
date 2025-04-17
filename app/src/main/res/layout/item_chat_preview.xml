@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="#F1F0E9">
+
+    <!-- 頭像 -->
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/avatar"
+        android:scaleType="centerCrop"
+        android:contentDescription="用戶頭像" />
+
+    <!-- 用戶名與預覽訊息 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用戶名"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewPreviewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="這是一條預覽消息"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <!-- 時間戳 -->
+    <TextView
+        android:id="@+id/textViewTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:45 PM"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

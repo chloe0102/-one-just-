@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/friend_studyroom">
+
+    <!-- 返回按鈕和標題 -->
+    <RelativeLayout
+        android:id="@+id/linerLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#F1F0E9"
+        android:padding="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 返回箭頭按鈕 -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_keyboard_arrow_left_24"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back" />
+
+        <!-- 標題文字 -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:text="跟好友一起讀書吧！"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/studyroomIdContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dp"
+        android:layout_centerInParent="true">
+
+        <!-- 輸入框容器 -->
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/input_bar_background"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp">
+
+        <!-- 輸入框 -->
+        <EditText
+            android:id="@+id/inputStudyroomId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="輸入好友自習室ID"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:maxLength="8"/>
+
+        <!-- 進入按鈕 -->
+        <ImageView
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/friend_studyroom_check_arrow"
+            android:contentDescription="進入好友自習室"
+            android:padding="8dp"
+            android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <!-- 分隔線 -->
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 創建自習室按鈕 -->
+        <Button
+            android:id="@+id/createStudyroomButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="創建好友自習室"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">讀one just書</string>
+    <string name="default_web_client_id">90458046968-k1hfg684mhtgvjt7q0d6lsfvgrqkdfct.apps.googleusercontent.com</string>
+    <string name="title_social">讀書圈</string>
+    <string name="title_room">自習室</string>
+    <string name="title_book">讀書札記</string>
+    <string name="title_profile">個人主頁</string>
+    <string name="avatar">用戶頭像</string>
+    <string name="add_photo">添加照片</string>
+</resources>

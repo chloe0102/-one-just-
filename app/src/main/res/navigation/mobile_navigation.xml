@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_room">
+
+    <fragment
+        android:id="@+id/navigation_room"
+        android:name="com.example.finalproject.RoomFragment"
+        tools:layout="@layout/fragment_room" />
+
+    <fragment
+        android:id="@+id/navigation_social"
+        android:name="com.example.finalproject.SocialFragment"
+        tools:layout="@layout/fragment_social" />
+
+    <fragment
+        android:id="@+id/navigation_book"
+        android:name="com.example.finalproject.BookFragment"
+        tools:layout="@layout/fragment_book">
+        <action
+            android:id="@+id/action_bookFragment_to_bookBeforeFragment"
+            app:destination="@id/bookBeforeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.finalproject.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/bookBeforeFragment"
+        android:name="com.example.finalproject.BookBeforeFragment"
+        android:label="BookBeforeFragment"
+        tools:layout="@layout/bookbefore" />
+</navigation>

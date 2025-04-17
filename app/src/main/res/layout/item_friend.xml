@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="#F1F0E9">
+
+    <!-- 頭像 -->
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/avatar"
+        android:scaleType="centerCrop"
+        android:contentDescription="用戶頭像"/>
+
+    <!-- 用戶名 -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="用戶名"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:contentDescription="用戶名稱" />
+
+    <!-- 聊天室按鈕 -->
+    <Button
+        android:id="@+id/buttonChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A7BCC1"
+        android:layout_margin="5dp"
+        android:text="聊天室"
+        android:textSize="16sp"
+        android:contentDescription="打開聊天室" />
+
+    <!-- 刪除按鈕 -->
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5555"
+        android:layout_margin="5dp"
+        android:text="刪除"
+        android:textSize="16sp"
+        android:contentDescription="刪除書友" />
+    <!-- 查看主页按钮 -->
+    <Button
+        android:id="@+id/buttonViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#78A2A9"
+        android:layout_margin="5dp"
+        android:text="查看主頁"
+        android:textSize="16sp"
+        android:contentDescription="查看用户主页" />
+
+    <!-- 添加好友按钮 -->
+    <Button
+        android:id="@+id/buttonAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:layout_margin="5dp"
+        android:text="添加好友"
+        android:textSize="16sp"
+        android:contentDescription="添加好友" />
+
+
+
+
+</LinearLayout>

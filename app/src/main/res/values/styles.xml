@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FocusButton">
+        <item name="android:layout_width">70dp</item> <!-- 按钮固定宽度 -->
+        <item name="android:layout_height">40dp</item> <!-- 按钮固定高度 -->
+        <item name="android:background">@drawable/tab_selector</item> <!-- 背景选择器 -->
+        <item name="android:textSize">14sp</item> <!-- 字体大小 -->
+        <item name="android:textColor">@color/tab_text_selector</item> <!-- 动态文字颜色选择器 -->
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 可选：自定义颜色或字体 -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:fontFamily">@font/han</item>
+    </style>
+
+    <style name="CircularImageShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>  <!-- 圓角半徑，設置為 12dp 會讓圖片有圓角 -->
+    </style>
+
+    <style name="CircleImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+   <!--ProgressBar的背景-->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp"/>
+            <solid android:color="#E0E0E0"/>
+        </shape>
+    </item>
+    <!--主要進度條的背景-->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="6dp"/>
+                <gradient
+                    android:angle="45"
+                    android:centerX="35%"
+                    android:centerColor="#ACC4CF"
+                    android:startColor="#ACC4CF"
+                    android:endColor="#E0E0E0"
+                    android:type="linear"
+                    />
+            </shape>
+        </clip>
+    </item>
+    <!--次要進度條的背景-->
+    <item android:id="@android:id/secondaryProgress" >
+        <clip>
+            <shape android:id="@android:id/progress">
+                <corners android:radius="6dp"/>
+                <gradient
+                    android:angle="45"
+                    android:centerX="35%"
+                    android:centerColor="#ACC4CF"
+                    android:startColor="#ACC4CF"
+                    android:endColor="#E0E0E0"
+                    android:type="linear"
+                    />
+            </shape>
+        </clip>
+
+    </item>
+
+</layer-list>
